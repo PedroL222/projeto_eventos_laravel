@@ -3,17 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Event;
 
 class EventController extends Controller
 {
     public function index(){
-        $nome = "Pedro";
-        $arr = ['1','2','3'];
-        $img = "../img/evento1.jpg";
-        return view('welcome', [
-            'nome'=> $nome, 
-            'arr' => $arr, 
-            'img' => $img]);
+        
+        $events = Event::all();
+
+        return view('welcome', ['events' => $events]);
         }
 
     public function create(){
