@@ -124,6 +124,26 @@ header{
     color: #757575;
 }
 
+/* Event create page */
+
+#event-create-container{
+    padding: 30px;
+}
+
+#event-create-container label{
+    font-weight: bold;
+}
+
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea{
+    font-size: 14px;
+}
+
+#event-create-container .btn-primary{
+    margin: 0 auto;
+}
+
 /* Footer */
 
 footer{
